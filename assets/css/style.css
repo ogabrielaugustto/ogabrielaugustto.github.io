@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    color: #fff;
+    font-family: 'Poppins', sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #080710 !important;
+}
+
+/***********************************************/
+
+/* INICIO HEADER/MENU */
+.navbar{
+    background-color: rgba(255,255,255,0.13);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end;
+}
+
+.navbar-brand{
+    height: 40px;
+    width: 32px;
+}
+
+.navbar-brand img{
+    height: 100%;
+    width: 100%; 
+}
+
+.navbar-nav a{
+    color: #fff !important;
+}
+
+
+.navbar-nav a:hover{
+    color: #b6b6b6 !important;
+}
+
+/* FIM HEADER/MENU */
+
+/***********************************************/
+
+/* INICIO FOOTER/RODAPÉ */
+.container-footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* FIM FOOTER/RODAPÉ */
+
+
+
+
+/* Tablets */
+@media screen and (max-width:768px) {
+    
+}
+
+/* Celulares */
+@media screen and (max-width:600px) {
+    
+}
