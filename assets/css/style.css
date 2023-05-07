@@ -8,16 +8,17 @@
 }
 
 body{
-    background-color: #080710 !important;
+    background-color: #000000 !important;
 }
 
 /***********************************************/
 
 /* INICIO HEADER/MENU */
 .navbar{
-    background-color: rgba(255,255,255,0.13);
+    /*
+    background-color: rgba(255, 255, 255, 0.034);
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6); */
 }
 
 .navbar-expand-lg .navbar-collapse{
@@ -46,14 +47,29 @@ body{
 /* FIM HEADER/MENU */
 
 /***********************************************/
+/* INICIO BODY */
+
+
+.container-inicio{
+    height: 90vh;
+}
+
+
+
+
+
+
+
+
+
+/* FIM BODY */
+/***********************************************/
 
 /* INICIO FOOTER/RODAPÉ */
 .container-footer{
     display: flex;
     justify-content: center;
 }
-
-
 /* FIM FOOTER/RODAPÉ */
 
 
