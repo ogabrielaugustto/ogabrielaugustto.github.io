@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Augusto</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo-g-white.png">
-
+    <link rel="icon" type="image/x-icon" href="assets/img/logo-g-white.png" />
 
     <!-- Arquivo CSS local -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
 
     <!-- CSS bootstrap 5.3.0 -->
     <link
@@ -21,49 +25,57 @@
   </head>
 
   <body>
-    <!-- Inicio Menu -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="assets/img/logo-g-white.png"
-            alt="Logo"
-            class="d-inline-block align-text-top"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="home.php"
-              >Inicio</a
-            >
-            <a class="nav-link" href="#">Projetos</a>
-            <a class="nav-link" href="#">Redes</a>
-            <a class="nav-link" href="#">Contato</a>
+    <div class="container-fluid blob-container">
+      <div class="blob-background"></div>
+      <div class="blob"></div>
+
+      <!-- Inicio Menu -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/img/nova-logo-white.png"
+              alt="Logo"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+              <a class="nav-link" href="#">Projetos</a>
+              <a class="nav-link" href="#">Redes</a>
+              <a class="nav-link" href="#">Contato</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <!-- Fim Menu -->
+      </nav>
+      <!-- Fim Menu -->
 
-    <!-- Inicio Conteudo Body -->
-    <div class="container container-inicio">
-      <div class="row">
-        <div class="col-lg-6">
-
-        </div>
-        <div class="col-lg-6">
-            
+      <!-- Inicio Conteudo Body -->
+      <div class="container container-inicio">
+        <div class="row row-title-logo-inicio">
+          <div class="col-lg-6 col-title-inicio">
+            <h1>Gabriel <strong>Augusto</strong></h1>
+            <h2>Desenvolvedor <span class="auto-type">Front-end</span></h2>
+          </div>
+          <div class="col-lg-6 col-logo-inicio">
+            <div class="card-3d-inicio">
+              <div class="hit-the-floor">&lt;&#x2F;&gt;</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -78,9 +90,6 @@
       </div>
     </footer>
 
-    <!-- Script JS local -->
-    <script type="text/javascript" src="assets/js/script.js"></script>
-
     <!-- Script bootstrap 5.3.0 -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
@@ -92,5 +101,11 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Script JS local -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
 </html>
