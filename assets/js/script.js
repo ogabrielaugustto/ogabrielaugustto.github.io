@@ -7,28 +7,38 @@ var typed = new Typed(".auto-type", {
 
 const pre = document.querySelector(".card-3d-inicio");
 
+// Define a posição inicial
+const initialOffsetX = -30.898328690807798;
+const initialOffsetY = -17.701421800947866;
+
+// Chama a função para definir a posição inicial
+setInitialPosition(pre, initialOffsetX, initialOffsetY);
+
 document.addEventListener("mousemove", (e) => {
-  rotateElement(e, pre);
+  if (window.innerWidth > 768) {
+    rotateElement(e, pre);
+  }
 });
 
+function setInitialPosition(element, offsetX, offsetY) {
+  element.style.setProperty("--rotateX", offsetX + "deg");
+  element.style.setProperty("--rotateY", -1 * offsetY + "deg");
+}
+
 function rotateElement(event, element) {
-  // get mouse position
+  // Obter a posição do mouse
   const x = event.clientX;
   const y = event.clientY;
-  // console.log(x, y)
 
-  // find the middle
+  // Obter o centro
   const middleX = window.innerWidth / 2;
   const middleY = window.innerHeight / 2;
-  // console.log(middleX, middleY)
 
-  // get offset from middle as a percentage
-  // and tone it down a little
+  // Obter o deslocamento a partir do centro como porcentagem
   const offsetX = ((x - middleX) / middleX) * 45;
   const offsetY = ((y - middleY) / middleY) * 45;
-  // console.log(offsetX, offsetY);
 
-  // set rotation
+  // Definir a rotação
   element.style.setProperty("--rotateX", offsetX + "deg");
   element.style.setProperty("--rotateY", -1 * offsetY + "deg");
 }
